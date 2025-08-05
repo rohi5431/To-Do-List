@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <style>
+        body{
+            height: auto;
+        }
+        .container{
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<%- include("partials/header") %>
+
+<div class="main">
+  <div class="container">
+    <h1>About This App</h1>
+  </div>
+
+ <div class="box" id="about-box"> 
+      <h2>About Our TO-DO List App</h2>
+       <p>Welcome to our to-do list app- your personel productivity companion</p>
+       <ul>
+           <h3>✨ Features</h3>
+           <li>Create, edit and delete tasks</li>
+           <li>Set Priorities and due dates</li>
+           <li>Responsive and user-friendly design</li>
+       </ul>
+  </div>
+</div>
+
+<%- include("partials/footer") %>
