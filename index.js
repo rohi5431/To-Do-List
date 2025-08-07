@@ -11,11 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://rohitk60316:g6VM1yp7Wt1R7bwS@cluster0.sroy8pl.mongodb.net/to_do_list?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
-
 
 const newSchema = new mongoose.Schema({
     task: {
