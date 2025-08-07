@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+require('dotenv').config();
 const methodOverride = require('method-override');
 
 const app = express();
