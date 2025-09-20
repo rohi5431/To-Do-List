@@ -35,7 +35,7 @@ to_do_list_mongodb/
 ├── index.js
 ├── package.json
 └── README.md
-
+```
 
 
 ## 💻 Technologies Used
@@ -52,19 +52,23 @@ to_do_list_mongodb/
 
 
 ## 🛠️ Future Improvements
-
+```
 . ✅ Task due dates
 . 🔔 Reminders or notifications
 . 🔍 Search & filter tasks
 . 👥 User authentication (login/signup)
 . 🗂️ Project or category organization
+```
 
 ## Run the Application
+```
 . node index.js
 👉 http://localhost:3000
+```
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
