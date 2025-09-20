@@ -1,50 +1,65 @@
-﻿🌐 Live Demo
- https://to-do-list-3efo.onrender.com
+## 📝 To-Do List App (MongoDB + Express + EJS)
+ 🌐 Live Demo
+[ https://to-do-list-3efo.onrender.com](https://to-do-list-4-8c2n.onrender.com)
  
- 🚀 Features
+ ## 🚀 Features
  
-✅ Add tasks with priorities (low, mid, high)
-🔎 Filter tasks by priority
-🕓 Display tasks sorted by date (most recent first)
-📝 Edit existing tasks
-❌ Delete tasks
-📄 About and Contact pages
-🎨 Responsive design with EJS templates
+. ✅ Create new tasks
+. ✏️ Edit existing tasks
+. ❌ Delete tasks
+. 🔺 Task priority management (High / Medium / Low)
+. 📦 MongoDB integration for persistent data storage
+. 🖼️ EJS templating for rendering dynamic content
 
-| Category  | Technologies                 |
-| --------- | ---------------------------- |
-| Backend   | Node.js, Express.js          |
-| Database  | MongoDB (with Mongoose)      |
-| Frontend  | HTML, CSS, EJS (Embedded JS) |
-| Utilities | Method-Override, Body-Parser |
+## 📁 Project Structure
 
-📦 to-do-list
-├── 📁 public/   
-    |- CSS
-    |- JS
-├── 📁 views/ 
-    |- list.ejs
-    |- about.ejs
-├── 📄 app.js            
-├── 📄 package.json
+to_do_list_mongodb/
+├── models/
+├── node_modules/
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   └── js/
+├── views/
+│   ├── partials/
+│   │   ├── footer.ejs
+│   │   ├── head.ejs
+│   │   └── header.ejs
+│   └── index.ejs
+├── .env
+├── index.js
+├── package.json
+└── README.md
 
-## 🌈 Routes Overview
 
-| Method | Route        | Description         |
-|--------|--------------|---------------------|
-| GET    | `/`          | Display task list   |
-| POST   | `/add`       | Add a new task      |
-| PUT    | `/edit/:id`  | Edit task by ID     |
-| DELETE | `/delete/:id`| Delete task by ID   |
-| GET    | `/about`     | About the app       |
-| GET    | `/contact`   | Contact page        |
+## 💻 Technologies Used
 
-📌 TODO (Improvements)
- . Add user authentication
- . Implement task deadlines and reminders
- . Add search functionality
+| Technology       | Description                                      |
+|------------------|--------------------------------------------------|
+| **Node.js**      | JavaScript runtime                               |
+| **Express.js**   | Web application framework for Node.js            |
+| **MongoDB**      | NoSQL database for storing tasks                 |
+| **Mongoose**     | ODM (Object Data Modeling) library for MongoDB   |
+| **EJS**          | Templating engine for rendering dynamic content  |
+| **Body-parser**  | Middleware for parsing request bodies            |
+| **Method-override** | Allows using HTTP verbs like PUT or DELETE via forms |
 
-👨‍💻 Author
+
+## 🛠️ Future Improvements
+
+. ✅ Task due dates
+. 🔔 Reminders or notifications
+. 🔍 Search & filter tasks
+. 👥 User authentication (login/signup)
+. 🗂️ Project or category organization
+
+## Run the Application
+. node index.js
+👉 http://localhost:3000
+
+## 👨‍💻 Author
 Rohit Kumar
+
 
 
