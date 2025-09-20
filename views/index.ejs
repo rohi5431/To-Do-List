@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<link rel="stylesheet" href="/css/style.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<%- include('partials/header') %>
+<main class="todo-app">
+  <% if (error && error.length > 0) { %>
+    <div class="alert error"><%= error %></div>
+  <% } %>
+  <% if (message && message.length > 0) { %>
+    <div class="alert success"><%= message %></div>
+  <% } %>
+
+  <!-- Task List -->
+  <ul class="task-list">
+    <% tasks.forEach(task => { %>
+      <li class="task-item" data-id="<%= task._id %>">
+        <form action="/tasks/delete/<%= task._id %>" method="POST">
+          <button type="submit">🗑</button>
+        </form>
+        <span class="task-title"><%= task.title %></span>
+        <span class="priority <%= task.priority %>"><%= task.priority.charAt(0).toUpperCase() + task.priority.slice(1) %></span>
+        
+        <button type="button" class="edit-btn" data-id="<%= task._id %>" data-title="<%= task.title %>" data-priority="<%= task.priority %>">✏️</button>
+      </li>
+    <% }) %>
+  </ul>
+
+  <!-- Add Task Form -->
+  <form action="/tasks" method="POST" class="task-form">
+    <input type="text" name="title" placeholder="Enter your task..." required>
+    <select name="priority" required>
+      <option value="high">High 🔥</option>
+      <option value="medium">Medium ⚡</option>
+      <option value="low">Low 🌿</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+</main>
+<%- include('partials/footer') %>
+<script src="/js/script.js"> </script>
+</body>
+</html>
