@@ -16,6 +16,7 @@
 
 ## 📁 Project Structure
 
+```plaintext
 to_do_list_mongodb/
 ├── models/
 ├── node_modules/
@@ -34,6 +35,7 @@ to_do_list_mongodb/
 ├── index.js
 ├── package.json
 └── README.md
+
 
 
 ## 💻 Technologies Used
@@ -63,6 +65,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
