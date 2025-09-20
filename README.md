@@ -2,14 +2,17 @@
  🌐 Live Demo
 [ https://to-do-list-3efo.onrender.com](https://to-do-list-4-8c2n.onrender.com)
  
- ## 🚀 Features
- 
-. ✅ Create new tasks
-. ✏️ Edit existing tasks
-. ❌ Delete tasks
-. 🔺 Task priority management (High / Medium / Low)
-. 📦 MongoDB integration for persistent data storage
-. 🖼️ EJS templating for rendering dynamic content
+## 🚀 Features
+
+| Feature                              | Description                               |
+|------------------------------------|---------------------------------------------|
+| ✅ Create new tasks                 | Add new to-do items                        |
+| ✏️ Edit existing tasks             | Modify task details                         |
+| ❌ Delete tasks                    | Remove tasks you no longer need             |
+| 🔺 Task priority management        | Set priority: High / Medium / Low           |
+| 📦 MongoDB integration             | Persistent data storage                     |
+| 🖼️ EJS templating                 | Dynamic rendering of pages                   |
+
 
 ## 📁 Project Structure
 
@@ -60,6 +63,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
