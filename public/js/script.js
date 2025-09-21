@@ -30,6 +30,9 @@ taskList.addEventListener("click", e => {
 
   li.insertAdjacentElement("afterend", form);
 
-  form.querySelector(".cancel-inline-edit").addEventListener("click", () => form.remove());
+   var cancelBtn = form.querySelector(".cancel-inline-edit");
+    cancelBtn.addEventListener("click", function(){
+    form.remove();
+  });
   });
 });
