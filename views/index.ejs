@@ -11,10 +11,10 @@
 <body>
 <%- include('partials/header') %>
 <main class="todo-app">
-  <% if (error && error.length > 0) { %>
+  <% if(error){ %>
     <div class="alert error"><%= error %></div>
   <% } %>
-  <% if (message && message.length > 0) { %>
+  <% if(message){ %>
     <div class="alert success"><%= message %></div>
   <% } %>
 
@@ -26,9 +26,13 @@
           <button type="submit">🗑</button>
         </form>
         <span class="task-title"><%= task.title %></span>
-        <span class="priority <%= task.priority %>"><%= task.priority.charAt(0).toUpperCase() + task.priority.slice(1) %></span>
+        <span class="priority <%= task.priority %>"></span>
         
-        <button type="button" class="edit-btn" data-id="<%= task._id %>" data-title="<%= task.title %>" data-priority="<%= task.priority %>">✏️</button>
+        <button type="button" class="edit-btn"
+        data-id="<%= task._id %>"
+        data-title="<%= task.title %>"
+        data-priority="<%= task.priority %>">
+       ✏️</button>
       </li>
     <% }) %>
   </ul>
