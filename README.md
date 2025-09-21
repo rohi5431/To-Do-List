@@ -10,8 +10,7 @@
 | ✏️ Edit existing tasks             | Modify task details                         |
 | ❌ Delete tasks                    | Remove tasks you no longer need             |
 | 🔺 Task priority management        | Set priority: High / Medium / Low           |
-| 📦 MongoDB integration             | Persistent data storage                     |
-| 🖼️ EJS templating                 | Dynamic rendering of pages                   |
+| 📦 MongoDB                         | data storage                     |
 
 
 ## 📁 Project Structure
@@ -42,13 +41,12 @@ to_do_list_mongodb/
 
 | Technology       | Description                                      |
 |------------------|--------------------------------------------------|
-| **Node.js**      | JavaScript runtime                               |
+| **Node.js**      | for backend                                      |
 | **Express.js**   | Web application framework for Node.js            |
-| **MongoDB**      | NoSQL database for storing tasks                 |
-| **Mongoose**     | ODM (Object Data Modeling) library for MongoDB   |
+| **MongoDB**      | database storing tasks                 |
 | **EJS**          | Templating engine for rendering dynamic content  |
 | **Body-parser**  | Middleware for parsing request bodies            |
-| **Method-override** | Allows using HTTP verbs like PUT or DELETE via forms |
+
 
 
 ## 🛠️ Future Improvements
@@ -68,6 +66,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
