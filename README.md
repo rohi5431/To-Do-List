@@ -6,11 +6,11 @@
 
 | Feature                              | Description                               |
 |------------------------------------|---------------------------------------------|
-| ✅ Create new tasks                 | Add new to-do items                        |
-| ✏️ Edit existing tasks             | Modify task details                         |
-| ❌ Delete tasks                    | Remove tasks you no longer need             |
-| 🔺 Task priority management        | Set priority: High / Medium / Low           |
-| 📦 MongoDB                         | data storage                     |
+| . Create new tasks                 | Add new to-do items                        |
+| . Edit existing tasks             | Modify task details                         |
+| . Delete tasks                    | Remove tasks you no longer need             |
+| . Task priority management        | Set priority: High / Medium / Low           |
+| . MongoDB                         | data storage                     |
 
 
 ## 📁 Project Structure
@@ -51,11 +51,11 @@ to_do_list_mongodb/
 
 ## 🛠️ Future Improvements
 ```
-. ✅ Task due dates
-. 🔔 Reminders or notifications
-. 🔍 Search & filter tasks
-. 👥 User authentication (login/signup)
-. 🗂️ Project or category organization
+.  Task due dates
+.  Reminders or notifications
+.  Search & filter tasks
+.  User authentication (login/signup)
+. 🗂 Project or category organization
 ```
 
 ## Run the Application
@@ -66,6 +66,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
