@@ -11,14 +11,13 @@ body{
 }
 
 .header{
-  width: 100%; /* fix overflow issue */
+  width: 100%; 
   background: #334155;
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeDown 0.6s ease-in-out;
   height: 70px; 
   display: flex;
   align-items: center;
@@ -26,7 +25,6 @@ body{
   border-bottom: 1px solid #ccc;
 }
 
-/* Inner container */
 .container{
   width: 90%;
   max-width: 1200px;
@@ -82,7 +80,6 @@ body{
   width: 100%;
 }
 
-/* Todo App Container */
 .todo-app{
   max-width: 600px;
   margin: 0 auto;
@@ -99,7 +96,6 @@ body{
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Task List */
 .task-list{
   list-style: none;
   padding: 0;
@@ -139,7 +135,6 @@ body{
   word-break: break-word;
 }
 
-/* Priority Labels */
 .priority{
   font-size: 14px;
   font-weight: 600;
@@ -163,7 +158,6 @@ body{
   color: #ccc;
 }
 
-/* Task Form */
 .task-form{
   margin-top: 25px;
   display: flex;
@@ -220,10 +214,9 @@ input::placeholder{
 
 .task-form button:hover{
   background-color: #1565c0;
-  transform: translateY(-2px);
 }
 
-.inline-edit-form{
+.edit-form{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -238,7 +231,7 @@ input::placeholder{
   background-color: #334155;
 }
 
-.inline-edit-form input{
+.edit-form input{
   flex: 2 1 200px;
   padding: 10px;
   border-radius: 8px;
@@ -248,11 +241,11 @@ input::placeholder{
   color: white;
 }
 
-.inline-edit-form input::placeholder{
+.edit-form input::placeholder{
   color: white;
 }
 
-.inline-edit-form select{
+.edit-form select{
   flex: 1 1 120px;
   padding: 10px;
   border-radius: 8px;
@@ -263,7 +256,7 @@ input::placeholder{
   color: white;
 }
 
-.inline-edit-form button{
+.edit-form button{
   flex: 0 0 auto;
   padding: 10px 16px;
   font-size: 14px;
@@ -274,21 +267,21 @@ input::placeholder{
   transition: all 0.2s ease;
 }
 
-.inline-edit-form button[type="submit"]{
+.edit-form button[type="submit"]{
   background-color: #28a745;
   color: #fff;
 }
 
-.inline-edit-form button[type="submit"]:hover{
+.edit-form button[type="submit"]:hover{
   background-color: #218838;
 }
 
-.inline-edit-form button.cancel-inline-edit{
+.edit-form button.cancel-edit{
   background-color: #dc3545;
   color: #fff;
 }
 
-.inline-edit-form button.cancel-inline-edit:hover{
+.edit-form button.cancel-edit:hover{
   background-color: #c82333;
 }
 
@@ -312,31 +305,30 @@ input::placeholder{
   border-left: 5px solid #1b5e20;
 }
 
-/* Responsive */
 @media (max-width: 600px){
   .task-form{
     flex-direction: column;
   }
 
-  .inline-edit-form{
+  .edit-form{
     flex-direction: column;
   }
 
   .task-form button,
-  .inline-edit-form button{
+  .edit-form button{
     width: 100%;
   }
 }
 
 @media (max-width: 500px){
-  .inline-edit-form {
+  .edit-form {
     flex-direction: column;
     gap: 8px;
   }
 
-  .inline-edit-form input,
-  .inline-edit-form select,
-  .inline-edit-form button{
+  .edit-form input,
+  .edit-form select,
+  .edit-form button{
     width: 100%;
   }
 }
