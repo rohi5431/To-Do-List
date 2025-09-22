@@ -5,41 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Todo App</title>
 <link rel="stylesheet" href="/css/style.css">
-<!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <%- include('partials/header') %>
 <main class="todo-app">
-  <% if (error && error.length > 0) { %>
+  <% if(error){ %>
     <div class="alert error"><%= error %></div>
   <% } %>
-  <% if (message && message.length > 0) { %>
+  <% if(message){ %>
     <div class="alert success"><%= message %></div>
   <% } %>
 
-  <!-- Task List -->
   <ul class="task-list">
-    <% tasks.forEach(task => { %>
+    <% tasks.forEach(function(task) { %>
       <li class="task-item" data-id="<%= task._id %>">
         <form action="/tasks/delete/<%= task._id %>" method="POST">
-          <button type="submit">🗑</button>
+           <button type="submit">Delete</button>
         </form>
         <span class="task-title"><%= task.title %></span>
-        <span class="priority <%= task.priority %>"><%= task.priority.charAt(0).toUpperCase() + task.priority.slice(1) %></span>
+        <span class="priority <%= task.priority %>"><%= task.priority %></span>
         
-        <button type="button" class="edit-btn" data-id="<%= task._id %>" data-title="<%= task.title %>" data-priority="<%= task.priority %>">✏️</button>
+        <button type="button" class="edit-btn"
+         data-id="<%= task._id %>"
+         data-title="<%= task.title %>" 
+         data-priority="<%= task.priority %>">
+         Edit
+        </button>
       </li>
     <% }) %>
   </ul>
 
-  <!-- Add Task Form -->
   <form action="/tasks" method="POST" class="task-form">
     <input type="text" name="title" placeholder="Enter your task..." required>
     <select name="priority" required>
-      <option value="high">High 🔥</option>
-      <option value="medium">Medium ⚡</option>
-      <option value="low">Low 🌿</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
     </select>
     <button type="submit">Add Task</button>
   </form>
