@@ -352,33 +352,33 @@ input::placeholder{
   gap: 2rem;
 }
 
-.footer-logo h2{
+.logo h2{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.footer-logo p{
+.logo p{
   color: #e0f0ff;
 }
 
-.footer-links{
+.links{
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.footer-links a{
+.links a{
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
 }
 
-.footer-links a:hover{
+.links a:hover{
   color: #ffe600;
 }
 
-.footer-links a::after{
+.links a::after{
   content: '';
   display: block;
   width: 0%;
@@ -390,11 +390,11 @@ input::placeholder{
   left: 0;
 }
 
-.footer-links a:hover::after{
+.links a:hover::after{
   width: 100%;
 }
 
-.social-icon{
+.icon{
   font-size: 1.5rem;
   text-decoration: none;
   margin-left: 12px;
@@ -402,31 +402,31 @@ input::placeholder{
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.social-icon:hover{
+.icon:hover{
   transform: scale(1.3) rotate(5deg);
 }
 
-.social-icon.instagram:hover{
+.icon.instagram:hover{
   color: #E4405F;
   text-shadow: 0 0 10px #E4405F, 0 0 20px #E4405F;
 }
 
-.social-icon.facebook:hover{
+.icon.facebook:hover{
   color: #1877F2;
   text-shadow: 0 0 10px #1877F2, 0 0 20px #1877F2;
 }
 
-.social-icon.linkedin:hover{
+.icon.linkedin:hover{
   color: #0A66C2;
   text-shadow: 0 0 10px #0A66C2, 0 0 20px #0A66C2;
 }
 
-.social-icon.github:hover{
+.icon.github:hover{
   color: #333;
   text-shadow: 0 0 10px #999, 0 0 20px #999;
 }
 
-.social-icon.youtube:hover{
+.icon.youtube:hover{
   color: #FF0000;
   text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000;
 }
@@ -490,7 +490,7 @@ input::placeholder{
     text-align: center;
   }
 
-  .footer-links,
+  .links,
   .footer-socials{
     justify-content: center;
   }
