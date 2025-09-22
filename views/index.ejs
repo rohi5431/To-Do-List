@@ -17,13 +17,13 @@
     <div class="alert success"><%= message %></div>
   <% } %>
 
-  <ul class="tasklist">
+  <ul class="list">
     <% tasks.forEach(function(task) { %>
-      <li class="taskitem" data-id="<%= task._id %>">
+      <li class="item" data-id="<%= task._id %>">
         <form action="/tasks/delete/<%= task._id %>" method="POST">
            <button type="submit">Delete</button>
         </form>
-        <span class="task-title"><%= task.title %></span>
+        <span class="title"><%= task.title %></span>
         <span class="priority <%= task.priority %>"><%= task.priority %></span>
         
         <button type="button" class="edit-btn"
