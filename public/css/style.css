@@ -431,7 +431,7 @@ input::placeholder{
   text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000;
 }
 
-.footer-bottom{
+.bottom{
   text-align: center;
   margin-top: 2rem;
   font-size: 0.85rem;
@@ -491,7 +491,7 @@ input::placeholder{
   }
 
   .links,
-  .footer-socials{
+  .socials{
     justify-content: center;
   }
 }
