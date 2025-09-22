@@ -11,7 +11,7 @@ tasks.addEventListener("click", function(e){
   var li = btn.closest("li");
   var id = btn.dataset.id;
   var title = btn.dataset.title;
-  var priority = btn.dataset.priorit
+  var priority = btn.dataset.priority;
   document.querySelectorAll(".edit-form").forEach(function(f){
     f.remove();
   });
