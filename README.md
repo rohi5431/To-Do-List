@@ -10,7 +10,8 @@
 | .  Edit existing tasks             | Edit present tasks                          |
 | .  Delete tasks                    | Delete task from database                   |
 | .  Task priority                   | Set priority: High / Medium / Low           |
-| .  MongoDB                         | All tasks store in mongodb after add or edit|
+| .  MongoDB                         | All tasks store in mongodb after create or  |
+|                                    |  edit                                       |
 
 
 ## 📁 Project Structure
@@ -43,7 +44,7 @@ to_do_list_mongodb/
 |------------------|--------------------------------------------------|
 | **Node.js**      | for backend                                      |
 | **Express.js**   | Web application framework for Node.js            |
-| **MongoDB**      | Used for store all tasks after add or edit       |
+| **MongoDB**      | Used for store all tasks after create or edit       |
 | **EJS**          | rendering dynamic content                        |
 | **Body-parser**  | Middleware for parsing request bodies            |
 
@@ -65,6 +66,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
