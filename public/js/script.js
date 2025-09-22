@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-const task = document.querySelector(".list");
+const tasks = document.querySelector(".list");
 
-task.addEventListener("click", function(e){
+tasks.addEventListener("click", function(e){
   if(!e.target.classList.contains("edit-btn")){
      return;
   }
