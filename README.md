@@ -6,11 +6,11 @@
 
 | Feature                              | Description                               |
 |------------------------------------|---------------------------------------------|
-| .  Create new tasks                | Add new to-do items                        |
-| .  Edit existing tasks             | Modify task details                         |
-| .  Delete tasks                    | Remove tasks you no longer need             |
-| .  Task priority management        | Set priority: High / Medium / Low           |
-| .  MongoDB                         | data storage                     |
+| .  Create new tasks                | Add new task                                |
+| .  Edit existing tasks             | Edit present tasks                          |
+| .  Delete tasks                    | Delete task from database                   |
+| .  Task priority                   | Set priority: High / Medium / Low           |
+| .  MongoDB                         | All tasks store in mongodb after add or edit|
 
 
 ## 📁 Project Structure
@@ -43,8 +43,8 @@ to_do_list_mongodb/
 |------------------|--------------------------------------------------|
 | **Node.js**      | for backend                                      |
 | **Express.js**   | Web application framework for Node.js            |
-| **MongoDB**      | database storing tasks                 |
-| **EJS**          | Templating engine for rendering dynamic content  |
+| **MongoDB**      | Used for store all tasks after add or edit       |
+| **EJS**          | rendering dynamic content                        |
 | **Body-parser**  | Middleware for parsing request bodies            |
 
 
@@ -55,7 +55,6 @@ to_do_list_mongodb/
 .  Reminders or notifications
 .  Search & filter tasks
 .  User authentication (login/signup)
-.  Project or category organization
 ```
 
 ## Run the Application
@@ -66,6 +65,7 @@ to_do_list_mongodb/
 
 ## 👨‍💻 Author
 Rohit Kumar
+
 
 
 
