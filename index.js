@@ -89,9 +89,8 @@ app.post("/tasks/edit/:id", function(req, res){
   else{
      res.redirect("/");  
   }
-  });
+  });     
 });
-
 
 app.post("/tasks/delete/:id", function(req, res){
    const { id } = req.params;
@@ -114,10 +113,11 @@ app.post("/tasks/delete/:id", function(req, res){
    }
    else{
       res.redirect("/");
-  }
+     }
+  });
 });
-});
-
 app.listen(3000, function(){
     console.log("Server running on http://localhost:3000");
 });
+
+
