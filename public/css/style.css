@@ -61,16 +61,6 @@ body{
   transition: color 0.3s ease;
 }
 
-.nav-links a::after{
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: white;
-  bottom: -4px;
-  left: 0;
-  transition: 0.3s ease;
-}
 
 .nav-links a:hover{
   color: #ffe600;
@@ -125,7 +115,7 @@ body{
   color: #ccc;
   cursor: pointer;
   padding: 1px;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 .title{
   flex: 1;

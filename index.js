@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 mongoose.set("strictQuery", false);
 
 mongoose.connect("mongodb+srv://Sachin5431:Sachin%4012345@cluster0.n2ptgfm.mongodb.net/todoDB?retryWrites=true&w=majority&appName=Cluster0");
-  const taskSchema = new mongoose.Schema({
+const taskSchema = new mongoose.Schema({
   title: String,
   priority:{
     type: String,
