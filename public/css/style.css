@@ -61,16 +61,6 @@ body{
   transition: color 0.3s ease;
 }
 
-.nav-links a::after{
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: white;
-  bottom: -4px;
-  left: 0;
-  transition: 0.3s ease;
-}
 
 .nav-links a:hover{
   color: #ffe600;
@@ -80,7 +70,7 @@ body{
   width: 100%;
 }
 
-.todo-app{
+.todo{
   max-width: 600px;
   margin: 0 auto;
   background: #1e293b;
@@ -92,17 +82,17 @@ body{
   margin-top: 150px;
 }
 
-.todo-app:hover{
+.todo:hover{
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.task-list{
+.list{
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-.task-item{
+.item{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,18 +106,18 @@ body{
   color: white;
 }
 
-.task-item:hover{
+.item:hover{
   background: #2f3a4a;
 }
 
-.task-item button{
+.item button{
   background: transparent;
   color: #ccc;
   cursor: pointer;
   padding: 1px;
-  margin-left: 2px;
+  margin-left: 5px;
 }
-.task-title{
+.title{
   flex: 1;
   font-size: 16px;
   font-weight: 500;
@@ -352,33 +342,33 @@ input::placeholder{
   gap: 2rem;
 }
 
-.footer-logo h2{
+.logo h2{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.footer-logo p{
+.logo p{
   color: #e0f0ff;
 }
 
-.footer-links{
+.links{
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.footer-links a{
+.links a{
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
 }
 
-.footer-links a:hover{
+.links a:hover{
   color: #ffe600;
 }
 
-.footer-links a::after{
+.links a::after{
   content: '';
   display: block;
   width: 0%;
@@ -390,11 +380,11 @@ input::placeholder{
   left: 0;
 }
 
-.footer-links a:hover::after{
+.links a:hover::after{
   width: 100%;
 }
 
-.social-icon{
+.icon{
   font-size: 1.5rem;
   text-decoration: none;
   margin-left: 12px;
@@ -402,36 +392,36 @@ input::placeholder{
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.social-icon:hover{
+.icon:hover{
   transform: scale(1.3) rotate(5deg);
 }
 
-.social-icon.instagram:hover{
+.icon.instagram:hover{
   color: #E4405F;
   text-shadow: 0 0 10px #E4405F, 0 0 20px #E4405F;
 }
 
-.social-icon.facebook:hover{
+.icon.facebook:hover{
   color: #1877F2;
   text-shadow: 0 0 10px #1877F2, 0 0 20px #1877F2;
 }
 
-.social-icon.linkedin:hover{
+.icon.linkedin:hover{
   color: #0A66C2;
   text-shadow: 0 0 10px #0A66C2, 0 0 20px #0A66C2;
 }
 
-.social-icon.github:hover{
+.icon.github:hover{
   color: #333;
   text-shadow: 0 0 10px #999, 0 0 20px #999;
 }
 
-.social-icon.youtube:hover{
+.icon.youtube:hover{
   color: #FF0000;
   text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000;
 }
 
-.footer-bottom{
+.bottom{
   text-align: center;
   margin-top: 2rem;
   font-size: 0.85rem;
@@ -490,8 +480,8 @@ input::placeholder{
     text-align: center;
   }
 
-  .footer-links,
-  .footer-socials{
+  .links,
+  .socials{
     justify-content: center;
   }
 }

@@ -9,41 +9,36 @@
 </head>
 <body>
 <%- include('partials/header') %>
-<main class="todo-app">
-  <% if(error){ %>
-    <div class="alert error"><%= error %></div>
-  <% } %>
-  <% if(message){ %>
-    <div class="alert success"><%= message %></div>
-  <% } %>
+<main class="todo">
+  <ul class="list">
+    <% for(let i=0; i<tasks.length; i++) { %>
+      <li class="item" data-id="<%= tasks[i]._id %>">
+        <span class="title"><%= tasks[i].title %></span>
+        <span class="priority <%= tasks[i].priority %>"><%= tasks[i].priority %></span>
 
-  <ul class="task-list">
-    <% tasks.forEach(function(task) { %>
-      <li class="task-item" data-id="<%= task._id %>">
-        <form action="/tasks/delete/<%= task._id %>" method="POST">
-           <button type="submit">Delete</button>
-        </form>
-        <span class="task-title"><%= task.title %></span>
-        <span class="priority <%= task.priority %>"><%= task.priority %></span>
-        
+          <form action="/tasks/delete/<%= tasks[i]._id %>" method="POST" class="inline-form">
+            <button type="submit">🗑 Delete</button>
+          </form>
+
         <button type="button" class="edit-btn"
-         data-id="<%= task._id %>"
-         data-title="<%= task.title %>" 
-         data-priority="<%= task.priority %>">
-         Edit
+          data-id="<%= tasks[i]._id %>"
+          data-title="<%= tasks[i].title %>" 
+          data-priority="<%= tasks[i].priority %>">
+          Edit
         </button>
+
       </li>
-    <% }) %>
+    <% } %>
   </ul>
 
   <form action="/tasks" method="POST" class="task-form">
-    <input type="text" name="title" placeholder="Enter your task..." required>
+    <input type="text" name="title" placeholder="Write somethinge to do ..." required>
     <select name="priority" required>
         <option value="high">High</option>
         <option value="medium">Medium</option>
         <option value="low">Low</option>
     </select>
-    <button type="submit">Add Task</button>
+    <button type="submit">Save task</button>
   </form>
 
 </main>
